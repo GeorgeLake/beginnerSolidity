@@ -1,2 +1,2 @@
 # beginnerSolidity
-some projects for learning solidity
+some projects for learning solidity and related blockchain tools
