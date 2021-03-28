@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@renproject/chains": "^2.1.6",
+    "@renproject/ren": "^2.1.6",
+    "ethers": "^5.0.32"
+  },
+  "type": "module"
+}
