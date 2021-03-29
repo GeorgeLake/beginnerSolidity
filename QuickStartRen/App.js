@@ -2,21 +2,7 @@ import { Bitcoin, Ethereum } from "@renproject/chains";
 import RenJS from "@renproject/ren";
 import ethers from "ethers";
 
-let ethereum = window.ethereum;
-let web3 = window.web3;
-if (typeof ethereum !== 'undefined') {
- await ethereum.enable();
- web3 = new Web3(ethereum);
-} else if (typeof web3 !== 'undefined') {
- web3 = new Web3(web3.currentProvider);
-} else {
- web3 = new Web3(new Web3.providers.HttpProvider(process.env.WEB3_PROVIDER));
-}
-/**
- * 
- 
-
-// Mint tokenized Bitcoin
+  // Mint tokenized Bitcoin
 const mint = async () => {
     await window.ethereum.enable();
     const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -54,5 +40,3 @@ const burn = async () => {
 };
 
 burn().catch(console.error);
-
-*/

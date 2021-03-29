@@ -1,7 +1,9 @@
 {
   "dependencies": {
+    "@metamask/detect-provider": "^1.2.0",
     "@renproject/chains": "^2.1.6",
     "@renproject/ren": "^2.1.6",
+    "browser-run": "^9.0.0",
     "ethers": "^5.0.32"
   },
   "type": "module"
