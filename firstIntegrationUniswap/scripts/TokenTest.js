@@ -5,6 +5,6 @@ const BToken = artifacts.require('BToken')
 module.exports = async function (callback) {
     aToken = await AToken.deployed()
     bToken = await BToken.deployed()
-    console.log(bToken)
+    console.log(bToken.totalSupply())
     callback()
 }
