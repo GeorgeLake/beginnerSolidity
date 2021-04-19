@@ -20,6 +20,6 @@ contract LiquidityValueCalculator is ILiquidityValueCalculator {
     function computeLiquidityShareValue(uint liquidity, address tokenA, address tokenB) external override returns (uint tokenAAmount, uint tokenBAmount) {
         uint tSupply;
         (tokenAAmount, tokenBAmount, tSupply) = pairInfo(tokenA, tokenB);
-        return (tSupply*tokenAAmount/liquidity, tSupply*tokenBAmount/liquidity);
+        return (tSupply*tokenAAmount/liquidity, tSupply*tokenBAmount/liquidity); // def wrong
     }
 }

@@ -26,11 +26,15 @@ const mint = async () => {
 
 mint().catch(console.error);
 
-// render(mint);
+render(mint);
 
 function App() {
-  render(mint);
+  return(
+    <div></div>
+   );
 }
+
+export default App;
 
 // function App() {
 //   return (
