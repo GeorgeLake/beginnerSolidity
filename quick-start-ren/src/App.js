@@ -1,5 +1,7 @@
 import './App.css';
 
+import { render } from "react-dom";
+
 import { Bitcoin, Ethereum } from "@renproject/chains";
 import RenJS from "@renproject/ren";
 import { ethers } from "ethers";
@@ -24,16 +26,18 @@ const mint = async () => {
 
 mint().catch(console.error);
 
+// render(mint);
 
-/**
- * 
- * @returns 
- function App() {
-   return (
-     <div className="App">
-     </div>
-     );
-    }
-    
-    export default App;
-    */
+function App() {
+  render(mint);
+}
+
+// function App() {
+//   return (
+//     <div className="App">
+//       mint()
+//     </div>
+//   );
+// }
+
+// export default App;
